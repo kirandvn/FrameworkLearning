@@ -47,7 +47,6 @@ public class LoginPageTest extends BaseClass {
 		loginpage.loginApp(username, password);
 		logger.pass("Login successful");
 		
-		
 		WebDriverWait wait = new WebDriverWait(driver, 5);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[contains(text(),'Kiraan Dvn')]")));
 		logger.pass("User name displayed after login is successful");
