@@ -1,0 +1,4 @@
+com\learning\tests\LoginPageTestWOFramework.class
+com\learning\tests\LoginPageTest.class
+com\learning\utilities\BrowserFactory.class
+com\learning\pages\LoginPage.class
