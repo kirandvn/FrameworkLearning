@@ -30,7 +30,6 @@ public class LoginPageTest extends BaseClass {
 		logger.pass("Login successful");
 		Reporter.log("LOGIN PASSED", true);
 
-
 		CommonUtils.captureScreenshot(driver);
 	}
 	
