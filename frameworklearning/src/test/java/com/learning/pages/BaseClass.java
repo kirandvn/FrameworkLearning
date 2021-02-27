@@ -1,12 +1,14 @@
 package com.learning.pages;
 
 import java.io.File;
+
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestResult;
 import org.testng.Reporter;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Parameters;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
@@ -36,12 +38,17 @@ public class BaseClass {
 		reports.attachReporter(reporter);
 	}
 
+	@Parameters({"urlname","bname"})
 	@BeforeMethod(alwaysRun = true)
-	public void setUp() {
-		driver = BrowserFactory.openBrowser(driver, appProperties.getBrowserFromProp());
+		public void setUp(String urlname, String bname) {
+//		driver = BrowserFactory.openBrowser(driver, appProperties.getBrowserFromProp());
+		driver = BrowserFactory.openBrowser(driver, bname);
+
 		Reporter.log("browser opened", true);
 
-		driver.get(appProperties.getAppURLFromProp());
+//		driver.get(appProperties.getAppURLFromProp());
+		driver.get(urlname);
+
 		System.out.println(driver.getTitle());
 	}
 

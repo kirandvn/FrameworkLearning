@@ -1,11 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="0" passed="0">
+<testng-results skipped="0" failed="0" ignored="2" total="3" passed="1">
   <reporter-output>
+    <line>
+      <![CDATA[setting up reports and test started]]>
+    </line>
+    <line>
+      <![CDATA[browser opened]]>
+    </line>
+    <line>
+      <![CDATA[LOGIN PASSED]]>
+    </line>
+    <line>
+      <![CDATA[test ended]]>
+    </line>
   </reporter-output>
-  <suite name="com.learning.tests.LoginPageTest" duration-ms="10" started-at="2021-02-09T08:53:52 IST" finished-at="2021-02-09T08:53:52 IST">
+  <suite name="Suite" duration-ms="36871" started-at="2021-02-27T09:25:27 IST" finished-at="2021-02-27T09:26:04 IST">
     <groups>
     </groups>
-    <test name="Command line test" duration-ms="10" started-at="2021-02-09T08:53:52 IST" finished-at="2021-02-09T08:53:52 IST">
-    </test> <!-- Command line test -->
-  </suite> <!-- com.learning.tests.LoginPageTest -->
+    <test name="DryTest" duration-ms="36871" started-at="2021-02-27T09:25:27 IST" finished-at="2021-02-27T09:26:04 IST">
+      <class name="com.learning.tests.LoginPageTest">
+        <test-method status="PASS" signature="setUpSuite()[pri:0, instance:com.learning.tests.LoginPageTest@7791a895]" name="setUpSuite" is-config="true" duration-ms="3214" started-at="2021-02-27T09:25:24 IST" finished-at="2021-02-27T09:25:27 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[setting up reports and test started]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- setUpSuite -->
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:com.learning.tests.LoginPageTest@7791a895]" name="setUp" is-config="true" duration-ms="24486" started-at="2021-02-27T09:25:27 IST" finished-at="2021-02-27T09:25:52 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://www.facebook.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[browser opened]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyLogin()[pri:0, instance:com.learning.tests.LoginPageTest@7791a895]" name="verifyLogin" duration-ms="9490" started-at="2021-02-27T09:25:52 IST" finished-at="2021-02-27T09:26:01 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[LOGIN PASSED]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyLogin -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.learning.tests.LoginPageTest@7791a895]" name="tearDown" is-config="true" duration-ms="2856" started-at="2021-02-27T09:26:01 IST" finished-at="2021-02-27T09:26:04 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLogin status=SUCCESS method=LoginPageTest.verifyLogin()[pri:0, instance:com.learning.tests.LoginPageTest@7791a895] output=LOGIN PASSED]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[test ended]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.learning.tests.LoginPageTest -->
+    </test> <!-- DryTest -->
+  </suite> <!-- Suite -->
 </testng-results>

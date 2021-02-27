@@ -20,7 +20,7 @@ public class CommonUtils {
 		String screenshotPath = System.getProperty("user.dir")+"/Screenshots/FacebookTest_"+getCurrentDateTime()+".png";
 		try {
 			FileHandler.copy(screenshot, new File(screenshotPath));
-			System.out.println("Screenshot Captured successfully");
+//			System.out.println("Screenshot Captured successfully");
 
 		} catch (Exception e) {
 			System.out.println("unable to capture screenshot" + e.getMessage());

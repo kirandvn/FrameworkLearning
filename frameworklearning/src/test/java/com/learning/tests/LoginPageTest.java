@@ -33,7 +33,7 @@ public class LoginPageTest extends BaseClass {
 		CommonUtils.captureScreenshot(driver);
 	}
 	
-	@Test
+	@Test(enabled = false)
 	public void verifyPageTitleAfterLogin() {
 
 		logger = reports.createTest("Verify page title on login to FB");
