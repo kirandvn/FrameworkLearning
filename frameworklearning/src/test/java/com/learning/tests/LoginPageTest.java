@@ -50,7 +50,6 @@ public class LoginPageTest extends BaseClass {
 		WebDriverWait wait = new WebDriverWait(driver, 5);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[contains(text(),'Kiran Dvn')]")));
 		logger.pass("User name displayed after login is successful");
-		
 		String pageTitle = driver.getTitle();
 		System.out.println("Page title on login is: "+pageTitle);
 		logger.pass("Page title is captured after login is successful");
