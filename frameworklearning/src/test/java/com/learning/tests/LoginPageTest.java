@@ -33,7 +33,7 @@ public class LoginPageTest extends BaseClass {
 		CommonUtils.captureScreenshot(driver);
 	}
 	
-	@Test(enabled = false)
+	@Test(enabled = true)
 	public void verifyPageTitleAfterLogin() {
 
 		logger = reports.createTest("Verify page title on login to FB");
@@ -48,7 +48,7 @@ public class LoginPageTest extends BaseClass {
 		logger.pass("Login successful");
 		
 		WebDriverWait wait = new WebDriverWait(driver, 5);
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[contains(text(),'Kiraan Dvn')]")));
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[contains(text(),'Kiran Dvn')]")));
 		logger.pass("User name displayed after login is successful");
 		
 		String pageTitle = driver.getTitle();
