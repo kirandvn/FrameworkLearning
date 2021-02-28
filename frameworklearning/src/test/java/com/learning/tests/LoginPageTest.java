@@ -55,7 +55,6 @@ public class LoginPageTest extends BaseClass {
 		System.out.println("Page title on login is: "+pageTitle);
 		logger.pass("Page title is captured after login is successful");
 
-
 		CommonUtils.captureScreenshot(driver);
 	}
 
